@@ -188,36 +188,135 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="project-grid">
-            <div class="project-card">
-                <h3><a href="https://github.com/anurudha07/Multi-Disease-Predictive-Analytics-Platform">| Multi-Disease Predictive Analytics Platform |</a></h3>
-                <p>Designed a predictive analytics web application using Python and Streamlit, harnessing supervised learning techniques to forecast the likelihood of four prevalent diseases: Parkinson's, Heart Disease, Diabetes, and Breast Cancer. This machine learning-powered tool analyzes critical health parameters to provide actionable insights and facilitate early diagnosis and intervention.</p>
-            </div>
-            
+    <style>
+    /* Projects Section - Universal Stability */
+    #projects {
+        padding: 4rem 1rem;
+        background: #f8f9fa;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease;
+        break-inside: avoid;
+    }
+
+    .project-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+        color: #2d3748;
+    }
+
+    .project-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #4a5568;
+        margin-bottom: 1rem;
+    }
+
+    .project-card a {
+        color: #2d3748;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .project-card a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #4CAF50;
+        transition: width 0.3s ease;
+    }
+
+    /* Interaction States */
+    @media (hover: hover) {
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .project-card a:hover::after {
+            width: 100%;
+        }
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
+        #projects {
+            padding: 2rem 1rem;
+        }
+        
+        .project-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        .project-card {
+            padding: 1.25rem;
+            margin: 0 0.5rem;
+        }
+        
+        .project-card h3 {
+            font-size: 1.1rem;
+        }
+        
+        .project-card p {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* Tablet Optimization */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .project-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+
+<!-- Projects Section Structure -->
+<section id="projects">
+    <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3><a href="https://github.com/anurudha07/Multi-Disease-Predictive-Analytics-Platform">| Multi-Disease Predictive Analytics Platform |</a></h3>
+            <p>Designed a predictive analytics web application using Python and Streamlit, harnessing supervised learning techniques to forecast the likelihood of four prevalent diseases: Parkinson's, Heart Disease, Diabetes, and Breast Cancer. This machine learning-powered tool analyzes critical health parameters to provide actionable insights and facilitate early diagnosis and intervention.</p>
         </div>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3><a href="https://anurudha07.github.io/Hand-Gesture-Based-Volume-Control/">| Hand Gesture-Based Volume Control using Computer Vision |</a></h3>
-                <p>A cutting-edge Hand Gesture-Based Volume Control system, leveraging computer vision and machine learning techniques. By harnessing the power of OpenCV, MediaPipe, and PyAutoGUI libraries, this innovative solution enables seamless volume control through intuitive hand gestures, detected and processed in real-time.</p>
-            </div>
-            
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3><a href="https://anurudha07.github.io/Hand-Gesture-Based-Volume-Control/">| Hand Gesture-Based Volume Control using Computer Vision |</a></h3>
+            <p>A cutting-edge Hand Gesture-Based Volume Control system, leveraging computer vision and machine learning techniques. By harnessing the power of OpenCV, MediaPipe, and PyAutoGUI libraries, this innovative solution enables seamless volume control through intuitive hand gestures, detected and processed in real-time.</p>
         </div>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3><a href="https://anurudha07.github.io/WeatherVue---Real-Time-Weather-Web-App/">| WeatherVue Real-Time-Weather-Web-App |</a></h3>
-                <p>"Presenting WeatherVue, a dynamic real-time weather application built leveraging the OpenWeatherMap API, HTML, CSS, and JavaScript. This project demonstrates my expertise in seamless API integration, responsive design principles, and dynamic frontend development, providing users with accurate and up-to-date weather information."</p>
-            </div>
-            
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3><a href="https://anurudha07.github.io/WeatherVue---Real-Time-Weather-Web-App/">| WeatherVue Real-Time-Weather-Web-App |</a></h3>
+            <p>"Presenting WeatherVue, a dynamic real-time weather application built leveraging the OpenWeatherMap API, HTML, CSS, and JavaScript. This project demonstrates my expertise in seamless API integration, responsive design principles, and dynamic frontend development, providing users with accurate and up-to-date weather information."</p>
         </div>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>| Sales Analytics |</h3>
-                <p>Designed a predictive analytics web application using Python and Streamlit, harnessing supervised learning techniques to forecast the likelihood of four prevalent diseases: Parkinson's, Heart Disease, Diabetes, and Breast Cancer. This machine learning-powered tool analyzes critical health parameters to provide actionable insights and facilitate early diagnosis and intervention.</p>
-            </div>
-            
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>| Sales Analytics |</h3>
+            <p>Predictive analytics solution for sales forecasting and business intelligence insights...</p>
         </div>
-    </section>
+    </div>
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -581,135 +680,7 @@
 }
 
 </style>
-<style>
-    /* Projects Section - Universal Stability */
-    #projects {
-        padding: 4rem 1rem;
-        background: #f8f9fa;
-    }
 
-    .project-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .project-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        transition: transform 0.2s ease;
-        break-inside: avoid;
-    }
-
-    .project-card h3 {
-        font-size: 1.25rem;
-        margin-bottom: 0.75rem;
-        line-height: 1.4;
-        color: #2d3748;
-    }
-
-    .project-card p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: #4a5568;
-        margin-bottom: 1rem;
-    }
-
-    .project-card a {
-        color: #2d3748;
-        text-decoration: none;
-        position: relative;
-        display: block;
-        padding: 0.5rem 0;
-    }
-
-    .project-card a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: #4CAF50;
-        transition: width 0.3s ease;
-    }
-
-    /* Interaction States */
-    @media (hover: hover) {
-        .project-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-        }
-        .project-card a:hover::after {
-            width: 100%;
-        }
-    }
-
-    /* Mobile Optimization */
-    @media (max-width: 768px) {
-        #projects {
-            padding: 2rem 1rem;
-        }
-        
-        .project-grid {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-        
-        .project-card {
-            padding: 1.25rem;
-            margin: 0 0.5rem;
-        }
-        
-        .project-card h3 {
-            font-size: 1.1rem;
-        }
-        
-        .project-card p {
-            font-size: 0.9rem;
-        }
-    }
-
-    /* Tablet Optimization */
-    @media (min-width: 769px) and (max-width: 1024px) {
-        .project-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-</style>
-
-<!-- Projects Section Structure -->
-<section id="projects">
-    <div class="project-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-            <h3><a href="https://github.com/anurudha07/Multi-Disease-Predictive-Analytics-Platform">Multi-Disease Predictive Analytics Platform</a></h3>
-            <p>Designed a predictive analytics web application using Python and Streamlit, harnessing supervised learning techniques to forecast the likelihood of four prevalent diseases...</p>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <h3><a href="https://anurudha07.github.io/Hand-Gesture-Based-Volume-Control/">Hand Gesture Volume Control</a></h3>
-            <p>Computer vision-based system using OpenCV and MediaPipe for real-time gesture recognition and volume control...</p>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <h3><a href="https://anurudha07.github.io/WeatherVue---Real-Time-Weather-Web-App/">WeatherVue Real-Time Weather App</a></h3>
-            <p>Dynamic weather application leveraging OpenWeatherMap API with responsive design and real-time updates...</p>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-            <h3>Sales Analytics Platform</h3>
-            <p>Predictive analytics solution for sales forecasting and business intelligence insights...</p>
-        </div>
-    </div>
-</section>
 
 
 
