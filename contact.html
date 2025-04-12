@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Anurudha's Portfolio - Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add styles specific to contact.html here */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #4CAF50;
+    }
+    .hire-me-btn {
+      background: #4caf5066;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    #contact {
+      padding: 150px 20px 100px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 40px;
+    }
+    .contact-item {
+      margin: 20px;
+      text-align: center;
+    }
+    .contact-item i {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #222f23;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #4CAF50;
+      color: rgb(31, 29, 29);
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      border: none;
+      outline: none;
+    }
+    .contact-form button:hover {
+      background: #626f63;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(76,175,80,0.3);
+    }
+    .contact-container h2 {
+      font-size: 2.5rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .contact-container h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #4CAF50;
+      margin: 15px auto 30px;
+    }
+    #contact {
+    padding: 150px 20px 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(5 5 5), rgb(0 0 0 / 74%));
+}
+
+.contact-container {
+    max-width: 600px; /* Reduced the max-width */
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: white; /* Changed the color to white */
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    color: white; /* Added color white */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Changed the background */
+}
+.contact-container {
+    max-width: 400px; /* Reduced the max-width */
+    margin: 0 auto;
+    padding: 60px; /* Reduced the padding */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}.contact-container {
+    max-width: 300px; /* Reduced the max-width */
+    margin: 0 auto;
+    padding: 20px; /* Reduced the padding */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px; /* Reduced the padding */
+    margin-bottom: 15px; /* Reduced the margin */
+    border: 1px solid #100f0f;
+    border-radius: 5px;
+    background: rgba(233, 225, 225, 0.803);
+}
+
+.contact-form button {
+    background: #545f54;
+    color: white;
+    padding: 8px 20px; /* Reduced the padding */
+    font-size: 1rem; /* Reduced the font size */
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.contact-container h2 {
+    font-size: 2rem; /* Reduced the font size */
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; /* Reduced the margin */
+    position: relative;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px; /* Reduced the margin */
+    color: white;
+}
+
+.contact-item {
+    margin: 10px; /* Reduced the margin */
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 18px; /* Reduced the font size */
+    margin-bottom: 5px; /* Reduced the margin */
+    color: #4CAF50;
+}
+
+.contact-item p {
+    font-size: 14px; /* Reduced the font size */
+}.contact-container {
+    max-width: 350px; /* Increased the max-width */
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Anurudha Sarkar</div>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact me</a>
+        <a href="mailto:anurudhs567@gmail.com?subject=Hire%20Request&body=Hi%20Anurudha,%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20opportunity.%0D%0A%0D%0ABest%20regards," target="_blank" class="hire-me-btn">Hire Me</a>
+    </div>
+  </div>
+</nav>
+<!-- Contact Section -->
+<section id="contact">
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+    <div class="contact-info">
+      
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <p>(+91) 8918018370</p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Kolkata,700074</p>
+      </div>
+    </div>
+    <form class="contact-form" action="mailto:anurudhs567@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
+

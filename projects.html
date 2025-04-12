@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Anurudha's Portfolio - Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        .hire-me-btn {
+            background: #4caf5066;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #projects {
+            background-image: linear-gradient(to bottom, rgb(5 5 5), rgb(0 0 0 / 74%));
+            background-size: cover;
+            background-position: center;
+            padding: 150px 20px 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 0 5%;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h3 a {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: white;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .project-card h3 a:hover {
+            border-bottom: 2px solid #bed7bf;
+        }
+
+        .projects-content h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .projects-content h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #4CAF50;
+            margin: 15px auto 30px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .projects-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .projects-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 2px solid transparent;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #6e626d;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Anurudha Sarkar</div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact me</a>
+                
+                <a href="mailto:anurudhs567@gmail.com?subject=Hire%20Request&body=Hi%20Anurudha,%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20opportunity.%0D%0A%0D%0ABest%regards,"  target="_blank" class="hire-me-btn">Hire Me</a>
+              </div>
+          </div>
+      </nav>
+  
+      <!-- Projects Section -->
+      <section id="projects">
+          <div class="projects-content">
+              <h2>Projects</h2>
+              <div class="projects-grid">
+                  <div class="project-card">
+                      <h3><a href="https://github.com/anurudha07/Multi-Disease-Predictive-Analytics-Platform">Multi-Disease Predictive Analytics Platform</a></h3>
+                      <p>Designed a predictive analytics web application using Python and Streamlit, harnessing supervised learning techniques to forecast the likelihood of four prevalent diseases.</p>
+                  </div>
+                  <div class="project-card">
+                      <h3><a href="https://anurudha07.github.io/Hand-Gesture-Based-Volume-Control/">Hand Gesture-Based Volume Control</a></h3>
+                      <p>A cutting-edge Hand Gesture-Based Volume Control system leveraging computer vision and machine learning techniques.</p>
+                  </div>
+                  <div class="project-card">
+                      <h3><a href="https://anurudha07.github.io/WeatherVue---Real-Time-Weather-Web-App/">WeatherVue Real-Time Weather App </a></h3>
+                      <p>Dynamic real-time weather application built with OpenWeatherMap API, HTML, CSS, and JavaScript.</p>
+                  </div>
+                  <div class="project-card">
+                      <h3><a href="Sales_Dashboard.pdf">Sales Analysis Dashboard Development</a></h3>
+                      <p>Utilized Power BI and DAX to develop advanced time series analytics, tracking sales performance and KPIs.</p>
+                  </div>
+                  <div class="project-card">
+                      <h3><a href="https://github.com/anurudha07/Bank-Management-System">Bank Management System</a></h3>
+                      <p>Built a group project- Bank Management System utilizing Spring Boot, incorporating user authentication and secure transaction processing capabilities.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </body>
+  </html>
+  
+  
