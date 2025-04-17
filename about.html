@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Anurudha's Portfolio - About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add styles specific to about.html here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        .hire-me-btn {
+            background: #4caf5066;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #about {
+            background-image: linear-gradient(to bottom, rgb(5 5 5), rgb(0 0 0 / 74%));
+            background-size: cover;
+            background-position: center;
+            padding: 150px 20px 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        #about h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #4CAF50;
+            margin: 15px auto 30px;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: justify;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+            color: #f0f0f0;
+        }
+
+        #about button {
+            background: #0000008e;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            outline: none;
+        }
+        #about a{
+          text-decoration: none;
+
+        }
+
+        #about button:hover {
+            background: #181918;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgb(50, 49, 49);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        #copyright {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#copyright p {
+  margin: 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: -50px auto 0; /* Added a negative margin-top */
+}
+#chat-log {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+#chat-log {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.typing {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.typing::after {
+  content: "";
+  animation: typing 1s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
+    </style>
+</head>
+<body>
+ 
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Anurudha Sarkar</div><div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact me</a>
+                <a href="mailto:anurudhs567@gmail.com?subject=Hire%20Request&body=Hi%20Anurudha,%0D%0A%0AI'd%20like%20to%20discuss%20a%20project%20opportunity.%0D%0A%0D%0ABest%20regards," target="_blank" class="hire-me-btn">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>"Highly motivated and detail-oriented Computer Science undergraduate with a strong academic background and a passion for innovative technology. I possess a solid foundation in programming languages, databases with hands-on experience with machine learning libraries as well as utilizing PowerBI for data analysis.</p>
+            <p>As a detail-oriented and analytical individual, I excel in problem-solving and critical thinking. My excellent communication skills enable me to effectively collaborate with teams and communicate complex ideas to diverse audiences.</p>
+            <p>With a keen interest in leveraging technology to drive positive change, I am committed to delivering high-quality solutions that exceed expectations. I am excited to bring my skills and enthusiasm to a dynamic team and contribute to innovative projects that make a meaningful impact."</p>
+            <a href="Anurudha_Sarkar_resume.pdf" download>
+                <button>Download CV</button>
+            </a>
+        </div>
+    </section>
+    <button id="chatbot-btn" style="position: fixed; bottom: 80px; right: 40px; background-color: transparent; border: none; cursor: pointer; outline: none;">
+        <div style="display: flex; justify-content: center; align-items: center; position: relative; width: 80px; height: 80px;">
+          <span style="font-size: 80px; background: linear-gradient(to right, #1e1f46 0%, #391c54 25%, #000000 50%, #15165d 75%, #391c54 100%); background-size: 400% 100%; background-clip: text; -webkit-background-clip: text; color: transparent; animation: snake 6s infinite linear;">♾️</span>
+          <span style="position: absolute; font-size: 16px; font-weight: bold; color: #000; text-shadow: none; background: none; bottom: -10px; right: 25px ;animation: none">DN7</span>
+        </div>
+        <style>
+          @keyframes snake {
+            0% {
+              background-position: 0% 0;
+            }
+            100% {
+              background-position: 100% 0;
+            }
+          }
+          
+        </style>
+      </button>
+      <div id="chatbox" style="display: none; position: fixed;bottom: 160px; right: 25px; background-color: transparent; padding: 20px; border-radius: 25px; color:rgb(109, 123, 152);box-shadow: 0 0 10px rgba(87, 85, 85, 0.974); width: 250px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Chat with DN7</h2>
+            <button id="close-chatbox" style="background-color: transparent; color:rgb(109, 123, 152);border: none; cursor: pointer; font-size: 18px;">⛔</button>
+        </div>
+        <div id="chat-log" style="padding: 20px; overflow-y: auto; max-height: 300px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: none; border-radius: 5px; background-color: #ffffff2f;">
+            <input id="chat-input" type="text" placeholder="Type a message..." style="width: 80%; padding: 5px; border: none;background-color:transparent; color: white ; outline: none;">
+            <button id="send-btn" style="background-color: transparent; border: none; cursor: pointer; font-size: 18px;">♾️</button>
+        </div>
+    </div>
+    
+
+    
+    
+<script>
+// Define the chatbot's knowledge base
+const knowledgeBase = {
+  "Educational background": "Anurudha Sarkar had completed his 10th and 12th schooling from The St. Xavier's School acing with good marks and currently persuing his B.Tech in CSE from MAKAUT affiliated university with aggregate cgpa of 8.05",
+  "education": "Anurudha Sarkar had completed his 10th and 12th schooling from The St. Xavier's School, acing with good marks and currently persuing his B.Tech in CSE from MAKAUT affiliated university with aggregate cgpa of 8.05",
+  "Hobby of Anurudha": " Other than coding, learning new technologies, and problem-solving, is listening to music.",
+  "hobby": " Other than coding, learning new technologies, and problem-solving, also listening to music.",
+  "class 10 percentage": "75.2%",
+  "class 12 percentage": "91%",
+  "Average cgpa": "8.05",
+  "name": "Anurudha Sarkar",
+  "skills": "Programming languages: Java, JavaScript, Html, CSS, Python, php; Databases: MySQL, MongoDB; Machine Learning: TensorFlow, Scikit Learn, numPy, Pandas; Data Analysis: Power BI, Advance Excel.",
+  "projects": "Build multiple projects including Multiple Disease Predition System, Bank Management System, Sales Analysis and so on. For futher details visit the Project section.",
+  "experience": "Participated in Smart India Hackathon where he led a team and presented innovative solutions to the organizer. Also, worked on a multiple projects, gaining expertise in building and mainting software as well. ",
+  "hello": "Hi! I'm DN7, I am here to assist you. So, How can I help you today?",
+  "hi": "Hello! I'm DN7, I am here to assist you Sir. So, What brings you here today?",
+  "hello":"Yes Sir, How can I assist you?",
+  "how are you": "I'm doing great, thanks for asking! How about you?",
+  "Good":"Sounds great...",
+  "what is your purpose": "My purpose is to assist you with any questions or queries you may have about Anurudha Sarkar.",
+  "Describe Anurudha":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+  "Tell me something about Anurudha":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+  "Preferred Domain":"Web development sounds great!",
+  "ok":"Is there something I am help with you Sir?",
+  "What would you rate yourself out of 10":"So, asfar my knowledge, Anurudha Sarkar with its proficieny with multiple languages and software developent abilities makes him a great fit, a straight 9! for your mentioned job profile.",
+  "Tell me about Anurudha":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+  "Anurudha":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+  "Is Anurudha familiar with cloud computing?":"Yes, He is familiar with Amazons AWS and Microsofts Azure.",
+  "Can Anurudha work with databases?":"Yes Sir, With hands-on experience with multiple projects integrating databases, Anurudha has gained expertise with databases. ",
+  "Do you have experience with Agile":"Yet not, but he is readily available to learn new technologies like Agile to bring contributions from his side.",
+  "Is Anurudha open to working on new technologies?":"Anurudha is readily available to learn new technologies to make contributions from his sid for our company.",
+  "new technologies?":"Anurudha is readily available to learn new technologies to make contributions from his side for our company.",
+  "Why should I hire you":"Anurudha has proficiency with multiple programming languages including java, javascript, html, css, python, php, react, Spring Boot, MySql and so on; with his expertise with building and maintaining software, Anurudha can be a great fit for your job profile.",
+  "Should I hire?":"Yes, Sure Sir, It will be a please to contribute for our company.",
+  
+
+};
+
+// Function to generate response
+function getResponse(input) {
+  input = input.toLowerCase();
+  const keywords = input.split(" ");
+  for (const key in knowledgeBase) {
+    const keyWords = key.split(" ");
+    let matchCount = 0;
+    for (const keyword of keywords) {
+      if (keyWords.includes(keyword)) {
+        matchCount++;
+      }
+    }
+    if (matchCount >= keyWords.length / 2) {
+      return knowledgeBase[key];
+    }
+  }
+  return "Sorry, I didn't understand that. Can you please rephrase?";
+}
+
+// Get elements
+var chatbox = document.getElementById("chatbox");
+var chatbotBtn = document.getElementById("chatbot-btn");
+var closeChatbox = document.getElementById("close-chatbox");
+var chatInput = document.getElementById("chat-input");
+var sendBtn = document.getElementById("send-btn");
+var chatLog = document.getElementById("chat-log");
+// Add event listener to chatbot button
+chatbotBtn.addEventListener("click", function() {
+  if (chatbox.style.display === "none") {
+    chatbox.style.display = "block";
+    var response = "Hi! I'm DN7, I am here to assist you. So, How can I help you today?";
+    var dn7Chat = document.createElement("div");
+    dn7Chat.textContent = "DN7: ";
+    chatLog.appendChild(dn7Chat);
+    
+    // Type each alphabet one by one
+    var i = 0;
+    var interval = setInterval(function() {
+      if (i < response.length) {
+        dn7Chat.textContent = "DN7: " + response.substring(0, i + 1);
+        i++;
+        chatLog.scrollTop = chatLog.scrollHeight;
+      } else {
+        clearInterval(interval);
+      }
+    }, 50); // adjust the speed of typing
+  } else {
+    chatbox.style.display = "none";
+  }
+});
+
+// Add event listener to close chatbox button
+closeChatbox.addEventListener("click", function() {
+  chatbox.style.display = "none";
+});
+
+
+// Use the getResponse function in your chatbot code
+sendBtn.addEventListener("click", function() {
+  var userInput = chatInput.value.trim();
+  if (userInput !== "") {
+    // Display user input in chat log
+    var userChat = document.createElement("div");
+    userChat.textContent = "You: " + userInput;
+    chatLog.appendChild(userChat);
+    
+    // Generate response
+    const response = getResponse(userInput);
+    var dn7Chat = document.createElement("div");
+    dn7Chat.textContent = "DN7: ";
+    chatLog.appendChild(dn7Chat);
+    
+    // Show typing indicator
+    var typingIndicator = document.createElement("span");
+    typingIndicator.textContent = "...";
+    dn7Chat.appendChild(typingIndicator);
+    
+    // Type each alphabet one by one after a short delay
+    setTimeout(function() {
+      dn7Chat.removeChild(typingIndicator);
+      var i = 0;
+      var interval = setInterval(function() {
+        if (i < response.length) {
+          dn7Chat.textContent = "DN7: " + response.substring(0, i + 1);
+          i++;
+          chatLog.scrollTop = chatLog.scrollHeight;
+        } else {
+          clearInterval(interval);
+        }
+      }, 50); // adjust the speed of typing
+    }, 500); // adjust the delay before typing starts
+    
+    // Clear input field
+    chatInput.value = "";
+  }
+});
+
+
+chatInput.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    sendBtn.click();
+  }
+});
+
+</script>
+
+   
+  
+      
+    
+    
+    <footer>
+    <div style="clear: both;"></div>
+        <div id="copyright">
+          <p>Copyright 2024 by Anurudha | All Rights Reserved</p>
+        </div>
+      </footer>
+</body>
+</html>
