@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-Scalable=no">
+    <title>Anurudha's Portfolio - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add styles specific to home.html here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        .hire-me-btn {
+            background: #4caf5066;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #home {
+    background-image: linear-gradient(to bottom,rgb(5 5 5),  rgb(0 0 0 / 81%)), url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+        .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px; /* adjust this value as needed */
+}
+
+        #home img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border: 10px solid transparent;
+            border-image: linear-gradient(to bottom, #000000, #414040);
+            border-image-slice: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s;
+        }
+
+        #home img:hover {
+            transform: scale(1.1);
+        }
+
+        .home-text {
+            margin-left: 50px;
+            max-width: 600px;
+        }
+
+        #home h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            animation: fadeIn 1.5s ease;
+            color: #f0f0f0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .home-content {
+  background-image: url('Robot.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.home-content {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Robot.jpg');
+  background-size: cover;
+  background-position: center;
+}#home {
+  position: relative;
+  padding: 0;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('Robot.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity as needed */
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 150px; /* Adjust padding-top to account for navigation bar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-content img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom, #000000, #414040);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-text {
+  margin-left: 50px;
+  max-width: 600px;
+  color: white;
+}
+footer {
+  text-align: right;
+  padding: 20px 0;
+  background-color: grey;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social-links a {
+  margin: 0 20px;
+  color: black; /* Change color to black or any other color that suits your design */
+  transition: color 0.3s;
+  display: inline-block
+}
+
+.social-links a:hover {
+  color: #858ea8;
+}
+
+.social-links i {
+  font-size: 24px;
+}
+.social-links i {
+  font-size: 24px;
+  text-shadow: 0 0 1px black; 
+}
+#copyright {
+  padding: 20px 0;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.807);
+  text-shadow: 0 0 1px white;
+  background-color: black;
+  margin-top: 20px; /* Add this line */
+}footer {
+  padding: 20px 0;
+}
+
+.footer-content {
+  background-color: grey;
+  padding: 20px;
+}
+
+#copyright {
+  padding: 20px 0;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.807);
+  text-shadow: 0 0 1px white;
+  background-color: rgba(24, 23, 23, 0.823);
+  margin-top: 20px;
+}
+
+#weather-btn {
+  z-index: 1001;
+}
+
+#weather-modal {
+  z-index: 1002;
+}
+#weather-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  text-shadow: 0 0 1px black;
+}.social-links i {
+  font-size: 30px; /* Increase icon size */
+  font-weight: 900; /* Make icons bolder */
+  text-shadow: 0 0 2px black;
+}
+
+
+
+#weather-btn {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: 500; 
+  
+}
+footer {
+  overflow: auto;
+}
+#weather-btn {
+  z-index: 1001;
+  position: relative;
+  
+}
+
+.social-links {
+  z-index: 1001;
+  position: relative;
+}  #weather-modal {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#weather-modal h2 {
+  color: white;
+  text-align: center;
+}
+
+#weather-modal p {
+  color: white;
+  text-align: center;
+  padding-right: 20px;
+}
+
+#close-weather-modal {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+#greeting-text {
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+#greeting-assist {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+</style>
+
+
+
+</head>
+<body>
+  
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Anurudha Sarkar</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact me</a>
+<a href="mailto:anurudhs567@gmail.com?subject=Hire%20Request&body=Hi%20Anurudha,%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20opportunity.%0D%0A%0D%0ABest%20regards," target="_blank" class="hire-me-btn">Hire Me</a>
+              </div>
+          </div>
+      </nav>
+      <!-- Home Section -->
+      <section id="home">
+          <div class="home-content">
+              <img src="Anurudha.jpg" alt="Anurudha Sarkar">
+              <!-- <img src="Robot.jpg" alt="Robot"> -->
+              <div class="home-text">
+                  <h1>Welcome to My Portfolio</h1>
+                  <p>[ I am Anurudha Sarkar... ]</p>
+                  <p> Here I'll be showcasing a collection of innovative projects that demonstrate my passion for leveraging technology to drive positive change. As a detail-oriented and results-driven computer science enthusiast, I'm excited to share my work with you. Explore my projects to discover how I've applied my skills in software development with exposure to Computer Vision and Machine Learning concepts to solve real-world problems and create impactful solutions</p>
+              </div>
+          </div>
+      </section>
+      
+    
+      <button id="chatbot-btn" style="position: fixed; bottom: 80px; right: 40px; background-color: transparent; border: none; cursor: pointer; outline: none;">
+        <div style="display: flex; justify-content: center; align-items: center; position: relative; width: 80px; height: 80px;">
+          <span style="font-size: 80px; background: linear-gradient(to right, #1e1f46 0%, #391c54 25%, #000000 50%, #15165d 75%, #391c54 100%); background-size: 400% 100%; background-clip: text; -webkit-background-clip: text; color: transparent; animation: snake 6s infinite linear;">♾️</span>
+          <span style="position: absolute; font-size: 16px; font-weight: bold; color: #000; text-shadow: none; background: none; bottom: -10px; right: 25px ;animation: none">DN7</span>
+        </div>
+        <style>
+          @keyframes snake {
+            0% {
+              background-position: 0% 0;
+            }
+            100% {
+              background-position: 100% 0;
+            }
+          }
+        </style>
+      </button>
+      
+      <div id="greeting-modal" style="display: none; position: fixed; bottom: 160px; right: 25px; color: rgb(109, 123, 152); background-color: transparent; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(192, 178, 178, 0.974); width: 200px;">
+        <h2 id="greeting-text"></h2>
+        <p id="greeting-assist"></p>
+    </div>
+    <div id="chatbox" style="display: none; position: fixed;bottom: 160px; right: 10px; background-color: transparent; padding: 20px; border-radius: 25px; color:rgb(109, 123, 152);box-shadow: 0 0 10px rgba(150, 147, 147, 0.974); width: 245px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Chat with DN7</h2>
+            <button id="close-chatbox" style="background-color: transparent; color:rgb(109, 123, 152);border: none; cursor: pointer; font-size: 18px;">⛔</button>
+        </div>
+        <div id="chat-log" style="padding: 20px; overflow-y: auto; max-height: 300px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: none; border-radius: 5px; background-color: #ffffff2f;">
+            <input id="chat-input" type="text" placeholder="Type a message..." style="width: 80%; padding: 5px; border: none;background-color:transparent; color: white ; outline: none;">
+            <button id="send-btn" style="background-color: transparent; border: none; cursor: pointer; font-size: 18px;">♾️</button>
+        </div>
+    </div>
+      <script>
+        // Display greeting modal after 1.5 seconds
+setTimeout(function() {
+    document.getElementById("greeting-modal").style.display = "block";
+    document.getElementById("greeting-text").innerHTML = 'Hello there! Its "DN7"...';
+    // document.getElementById("greeting-assist").innerHTML = 'Is there something I can assist you with?';
+}, 1500);
+
+
+
+
+const greetingText = 'Hello there! Its "DN7"...';
+const greetingAssist = 'Is there something I can assist you with?';
+let i = 0;
+let j = 0;
+
+setTimeout(function() {
+    document.getElementById("greeting-modal").style.display = "block";
+    typeWriter();
+}, 1500);
+
+function typeWriter() {
+    if (i < greetingText.length) {
+        document.getElementById("greeting-text").innerHTML = greetingText.substring(0, i + 1);
+        i++;
+        setTimeout(typeWriter, 50);
+    } else if (j < greetingAssist.length) {
+        document.getElementById("greeting-assist").innerHTML = greetingAssist.substring(0, j + 1);
+        j++;
+        setTimeout(typeWriter, 50);
+    }
+}
+
+document.addEventListener("click", function(event) {
+  var greetingModal = document.getElementById("greeting-modal");
+  if (!greetingModal.contains(event.target) && event.target !== chatbotBtn && event.target !== document.getElementById("greeting-text") && event.target !== document.getElementById("greeting-assist")) {
+    greetingModal.style.display = "none";
+  }
+});
+
+      </script>
+         
+<script>
+  // Define the chatbot's knowledge base
+  const knowledgeBase = {
+    "anurudha":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+    "anurudha sarkar":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+    
+    "introduce":"Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+    "introduction":"I am DN7 developed by Anurudha, So as per my knowledge, Anurudha is a detail-oriented final-year Computer Science graduate proficient in multiple programming languages, including Java and Object-Oriented Programming. Expertise in software development using HTML, CSS, JavaScript, PHP, React and SpringBoot, with additional skills in data analysis and database management utilizing MySQL.",
+    
+   
+    "educational background": "Anurudha Sarkar had completed his 10th and 12th schooling from The St. Xavier's School acing with good marks and currently persuing his B.Tech in CSE from MAKAUT affiliated university with aggregate cgpa of 8.05",
+    "education": "Anurudha Sarkar had completed his 10th and 12th schooling from The St. Xavier's School, acing with good marks and currently persuing his B.Tech in CSE from MAKAUT affiliated university with aggregate cgpa of 8.05",
+    "hobbies of anurudha": " Other than coding, learning new technologies, and problem-solving, is listening to music.",
+    "hobby": " Other than coding, learning new technologies, and problem-solving, also listening to music.",
+    "hobbies": " Other than coding, learning new technologies, and problem-solving, also listening to music.",
+    "class 10 percentage": "75.2%",
+    "class 12 percentage": "91%",
+    "average cgpa": "8.05",
+    "10th": "75.2%",
+    "12th": "91%",
+    "cgpa": "8.05",
+    "name": "Anurudha Sarkar",
+    "skills": "Programming languages: Java, JavaScript, Html, CSS, Python, php; Databases: MySQL, MongoDB; Machine Learning: TensorFlow, Scikit Learn, numPy, Pandas; Data Analysis: Power BI, Advance Excel.",
+    "projects": "Build multiple projects including Multiple Disease Predition System, Bank Management System, Sales Analysis and so on. For futher details visit the Project section.",
+    "experience": "Participated in Smart India Hackathon where he led a team and presented innovative solutions to the organizer. Also, worked on a multiple projects, gaining expertise in building and mainting software as well. ",
+    "experiences": "Participated in Smart India Hackathon where he led a team and presented innovative solutions to the organizer. Also, worked on a multiple projects, gaining expertise in building and mainting software as well. ",
+    "hello": "Hi! I'm DN7, I am here to assist you. So, How can I help you today?",
+    "hi": "Hello! I'm DN7, I am here to assist you Sir. So, What brings you here today?",
+    "hello":"Yes Sir, How can I assist you?",
+    "how are you": "I'm doing great, thanks for asking! How about you?",
+    "good":"Sounds great...",
+    "purpose": "My purpose is to assist you with any questions or queries you may have about Anurudha Sarkar.",
+   
+   
+    "domain":"Web development sounds great!",
+    "ok":"Is there something I am help with you Sir?",
+    "rate":"So, asfar my knowledge, Anurudha Sarkar with its proficieny with multiple languages and software developent abilities makes him a great fit, a straight 9! for your mentioned job profile.",
+    
+    "cloud computing?":"Yes, He is familiar with Amazons AWS and Microsofts Azure.",
+    "databases?":"Yes Sir, With hands-on experience with multiple projects integrating databases, Anurudha has gained expertise with databases. ",
+    "agile":"Yet not, but he is readily available to learn new technologies like Agile to bring contributions from his side.",
+    "Is Anurudha open to working on new technologies?":"Anurudha is readily available to learn new technologies to make contributions from his side for our company.",
+    "new ?":"Anurudha is readily available to learn new technologies to make contributions from his side for our company.",
+    "Why should I hire you":"Anurudha has proficiency with multiple programming languages including java, javascript, html, css, python, php, react, Spring Boot, MySql and so on; with his expertise with building and maintaining software, Anurudha can be a great fit for your job profile.",
+    "should i hire anurudha?":"Yes, Sure Sir, It will be a pleasure to contribute for our company.",
+    
+    "should I hire him?":"Yes, Sure Sir, It will be a pleasure to contribute for our company.",
+
+    "salary":"For that purpose you can move to contact section to get in touch with Anurudha.",
+  
+    "current ":"As a fresher, genuinely eager to leverage my skills and contribute to a dynamic team. Anurudha is open to discussing compensation based on industry standards and company norms.",
+    "expected":"For that purpose you can move to contact section to get in touch with Anurudha.",
+    "past":"Yet to join a company, and he is excited to explore opportunities and contribute skills and knowledge.",
+    "is anurudha single":"Not yet, already taken by a beautiful woman.",
+    "single":"Not yet, already taken by a beautiful woman.",
+    "girlfriend":"Yeah! She's a pretty woman.",
+    "gf":"Yeah! She's a pretty woman.",
+    
+   
+    "relocate":"Yes, sure.",
+  
+  };
+  
+  // Function to generate response
+  function getResponse(input) {
+    input = input.toLowerCase();
+    const keywords = input.split(" ");
+    for (const key in knowledgeBase) {
+      const keyWords = key.split(" ");
+      let matchCount = 0;
+      for (const keyword of keywords) {
+        if (keyWords.includes(keyword)) {
+          matchCount++;
+        }
+      }
+      if (matchCount >= keyWords.length / 2) {
+        return knowledgeBase[key];
+      }
+    }
+    return "Sorry, I didn't understand that. Can you please rephrase?";
+  }
+  
+  // Get elements
+  var chatbox = document.getElementById("chatbox");
+  var chatbotBtn = document.getElementById("chatbot-btn");
+  var closeChatbox = document.getElementById("close-chatbox");
+  var chatInput = document.getElementById("chat-input");
+  var sendBtn = document.getElementById("send-btn");
+  var chatLog = document.getElementById("chat-log");
+  // Add event listener to chatbot button
+  chatbotBtn.addEventListener("click", function() {
+    if (chatbox.style.display === "none") {
+      chatbox.style.display = "block";
+      var response = "Hi! I'm DN7, I am here to assist you. So, How can I help you today?";
+      var dn7Chat = document.createElement("div");
+      dn7Chat.textContent = "DN7: ";
+      chatLog.appendChild(dn7Chat);
+      
+      // Type each alphabet one by one
+      var i = 0;
+      var interval = setInterval(function() {
+        if (i < response.length) {
+          dn7Chat.textContent = "DN7: " + response.substring(0, i + 1);
+          i++;
+          chatLog.scrollTop = chatLog.scrollHeight;
+        } else {
+          clearInterval(interval);
+        }
+      }, 50); // adjust the speed of typing
+    } else {
+      chatbox.style.display = "none";
+    }
+  });
+  
+  // Add event listener to close chatbox button
+  closeChatbox.addEventListener("click", function() {
+    chatbox.style.display = "none";
+  });
+  
+  
+  // Use the getResponse function in your chatbot code
+  sendBtn.addEventListener("click", function() {
+    var userInput = chatInput.value.trim();
+    if (userInput !== "") {
+      // Display user input in chat log
+      var userChat = document.createElement("div");
+      userChat.textContent = "You: " + userInput;
+      userChat.style.color = "grey";
+      chatLog.appendChild(userChat);
+      
+      // Generate response
+      const response = getResponse(userInput);
+      var dn7Chat = document.createElement("div");
+      dn7Chat.textContent = "DN7: ";
+      chatLog.appendChild(dn7Chat);
+      
+      // Show typing indicator
+      var typingIndicator = document.createElement("span");
+      typingIndicator.textContent = "...";
+      dn7Chat.appendChild(typingIndicator);
+      
+      // Type each alphabet one by one after a short delay
+      setTimeout(function() {
+        dn7Chat.removeChild(typingIndicator);
+        var i = 0;
+        var interval = setInterval(function() {
+          if (i < response.length) {
+            dn7Chat.textContent = "DN7: " + response.substring(0, i + 1);
+            i++;
+            chatLog.scrollTop = chatLog.scrollHeight;
+          } else {
+            clearInterval(interval);
+          }
+        }, 50); // adjust the speed of typing
+      }, 500); // adjust the delay before typing starts
+      
+      // Clear input field
+      chatInput.value = "";
+    }
+  });
+  
+  
+  chatInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      sendBtn.click();
+    }
+  });
+  
+  </script>
+      
+      
+      <footer>
+        <button id="weather-btn" style="padding: 10px; border: none; border-radius: 5px; background-color:transparent; color: rgb(15, 15, 15); cursor: pointer; float: left;">
+          <i class="fas fa-cloud"></i> Weather
+        </button>
+        <div class="social-links" style="float: right; margin-top: 10px;">
+          <a href="https://www.instagram.com/_anurudha_/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/anurudha07" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anurudha-sarkar-3b77ab228/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- Add a modal to display weather info -->
+        <div id="weather-modal" style="display: none; position: fixed; bottom: 70px; left: 10px; background-color: rgba(24, 22, 22, 0); padding: 20px; border-radius: 30px; box-shadow: 0 0 10px rgba(202, 196, 196, 0.574); width: 250px;">
+          <h2 id="weather-location" style="color: rgb(140, 150, 181); text-align: left; font-weight: bold; font-size: 18px;"></h2>
+          <div style="position: relative; display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 40px;">
+            <p id="weather-description" style="color: rgb(198, 201, 208); font-size: 14px; margin-right: 20px;"></p>
+            <img id="weather-icon" src="" alt="Weather Icon" style="width: 75px; height: 75px; position: absolute; right: 50px;">
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+              <p id="weather-temperature" style="color: rgba(255, 255, 255, 0.781); font-size: 18px; font-weight: bold;"></p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+              <p id="weather-time" style="color: rgba(255, 255, 255, 0.781); font-size: 12px;"></p>
+            </div>
+          </div>
+          <button id="close-weather-modal" style="background-color: #858ea8b6; color: white; border: none; padding: 5px 10px; border-radius: 50px; cursor: pointer; width: 100%;">Close</button>
+        </div>
+        
+        <div style="clear: both;"></div>
+        <div id="copyright">
+          <p>Copyright 2024 by Anurudha | All Rights Reserved</p>
+        </div>
+      </footer>
+      
+      <script src="script.js"></script>
+      
+
+  </body>
+  </html>
